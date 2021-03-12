@@ -43,7 +43,6 @@ task jacocoTestReport(type: JacocoReport, dependsOn: 'testDebugUnitTest') {
     classDirectories.from = files([debugTree])
     executionData.from = files("${buildDir}/jacoco/testDebugUnitTest.exec")
 }
-
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.2.0'
